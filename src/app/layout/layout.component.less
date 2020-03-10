@@ -1,0 +1,35 @@
+// 导入主色调
+@import "../../styles/theme";
+
+.wrapper {
+  // flex布局开始
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: @background-color;
+  header,
+  footer {
+    flex: 0.1;
+  }
+  .header {
+    height: 50px;
+  }
+  // 内容区域
+  .section {
+    display: flex;
+    flex: 10;
+    .content {
+      flex: 1;
+    }
+    nav, aside {
+      /* 两个边栏的宽度设为12em */
+      flex: 0 0 12em;
+    }
+
+    nav {
+      /* 导航放到最左边 */
+      order: -1;
+    }
+  }
+}
+
