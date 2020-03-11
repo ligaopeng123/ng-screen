@@ -24,7 +24,7 @@ export class LayoutComponent implements OnInit {
   }
   getCommission() {
     this.http.get(this.url).subscribe(data => {
-      console.log(data)
+      console.log(data);
     })
   }
 }
