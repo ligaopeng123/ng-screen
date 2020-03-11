@@ -1,14 +1,9 @@
 {
   "name": "ng-report",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "keywords": [
     "angular",
-    "angular 9",
-    "electron",
-    "typescript",
-    "eslint",
-    "spectron",
-    "sass"
+    "electron"
   ],
   "main": "main.js",
   "private": true,
@@ -50,15 +45,9 @@
     "@angular-devkit/build-angular": "0.900.3",
     "@angular-eslint/builder": "0.0.1-alpha.18",
     "@angular/cli": "9.0.3",
-    "@angular/common": "9.0.2",
-    "@angular/compiler": "9.0.2",
-    "@angular/compiler-cli": "9.0.2",
-    "@angular/core": "9.0.2",
-    "@angular/forms": "9.0.2",
-    "@angular/language-service": "9.0.2",
-    "@angular/platform-browser": "9.0.2",
-    "@angular/platform-browser-dynamic": "9.0.2",
-    "@angular/router": "9.0.2",
+    "@angular/compiler-cli": "9.0.1",
+    "@angular/language-service": "9.0.1",
+    "@delon/mock": "^8.9.0",
     "@ngx-translate/core": "12.1.1",
     "@ngx-translate/http-loader": "4.0.0",
     "@types/jasmine": "3.5.6",
@@ -85,14 +74,12 @@
     "karma-jasmine": "3.1.1",
     "karma-jasmine-html-reporter": "1.5.2",
     "mocha": "7.0.1",
+    "mockjs": "^1.1.0",
     "npm-run-all": "4.1.5",
-    "rxjs": "6.5.4",
     "spectron": "10.0.1",
-    "tslib": "1.10.0",
     "ts-node": "8.3.0",
     "typescript": "3.7.5",
     "wait-on": "4.0.0",
-    "webdriver-manager": "12.1.7",
-    "zone.js": "0.10.2"
+    "webdriver-manager": "12.1.7"
   }
 }

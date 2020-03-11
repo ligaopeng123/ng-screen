@@ -3,7 +3,17 @@
   "compilerOptions": {
     "outDir": "../out-tsc/app",
     "module": "es2015",
-    "baseUrl": "",
+    "baseUrl": "./",
+    "paths": {
+      "@shared": ["app/shared"],
+      "@shared/*": ["app/shared/*"],
+      "@core": ["app/core/"],
+      "@core/*": ["app/core/*"],
+      "@layout": ["app/layout"],
+      "@layout/*": ["app/layout/*"],
+      "@routes": ["app/routes"],
+      "@routes/*": ["app/routes/*"]
+    },
     "types": []
   },
   "exclude": [

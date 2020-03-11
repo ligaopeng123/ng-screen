@@ -2,6 +2,17 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
+    "baseUrl": "./",
+    "paths": {
+      "@shared": ["src/app/shared"],
+      "@shared/*": ["src/app/shared/*"],
+      "@core": ["src/app/core/"],
+      "@core/*": ["src/app/core/*"],
+      "@layout": ["src/app/layout"],
+      "@layout/*": ["src/app/layout/*"],
+      "@routes": ["src/app/routes"],
+      "@routes/*": ["src/app/routes/*"]
+    },
     "types": []
   },
   "files": [

@@ -7,23 +7,30 @@
   min-height: 100vh;
   flex-direction: column;
   background: @background-color;
-  header,
   footer {
-    flex: 0.1;
+    // 百分比
+    flex: 1;
   }
-  .header {
-    height: 50px;
+  header {
+    flex: 5 0;
   }
   // 内容区域
   .section {
     display: flex;
-    flex: 10;
+    flex: 94;
+    min-width: 100vh;
+    flex-direction: row;
     .content {
       flex: 1;
     }
-    nav, aside {
+    nav {
+      /* 菜单栏宽度 */
+      flex: 0 0 200px;
+    }
+
+    aside {
       /* 两个边栏的宽度设为12em */
-      flex: 0 0 12em;
+      //flex: 0 0 12em;
     }
 
     nav {

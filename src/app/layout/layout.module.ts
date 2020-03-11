@@ -1,9 +1,11 @@
 import { NgModule } from '@angular/core';
 import { LayoutComponent } from './layout.component';
+import { HeaderComponent } from './header/header.component';
 
 // 需要动态加载的组件
 const COMPONENTS = [
-  LayoutComponent
+  LayoutComponent,
+  HeaderComponent
 ];
 
 const HEADERCOMPONENTS = [
