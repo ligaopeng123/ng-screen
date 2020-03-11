@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { HttpClientModule } from '@angular/common/http';
 import { DelonMockModule } from '@delon/mock';
 
 import * as MOCKDATA from '../../mock';
 import { LayoutModule } from './layout/layout.module';
+import { RoutesModule } from '@routes/routes.module';
 
 
 // 只对开发环境有效
@@ -24,7 +24,8 @@ const MOCKMODULE = DelonMockModule.forRoot({ data: MOCKDATA });
     AppRoutingModule,
     CoreModule,
     MOCKMODULE,
-    LayoutModule
+    LayoutModule,
+    RoutesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
